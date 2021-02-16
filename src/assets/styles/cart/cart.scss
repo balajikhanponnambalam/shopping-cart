@@ -1,0 +1,186 @@
+.cart-page {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  .cart-header {
+    .cart-title {
+      height: 33px;
+      margin: 20px 10px;
+      border-top: 1px solid #c7bfbf;
+      border-bottom: 1px solid #c7bfbf;
+      padding: 10px 0px;
+    }
+    .title {
+      width: 40%;
+      float: left;
+      font-size: 22px;
+    }
+    .cart-added-item {
+      float: left;
+      padding: 5px;
+      position: relative;
+      border: 1px solid gray;
+      background: #52d652;
+    }
+  }
+  .list-of-products {
+    width: 66%;
+
+    .product {
+      width: 30%;
+      float: left;
+      margin: 20px 0 0 20px;
+      border: 1px solid #a5a1a1;
+      .discount {
+        position: relative;
+        top: 40px;
+        padding-left: 10px;
+        width: 60px;
+        background: #37b137;
+        color: white;
+      }
+      img {
+        max-width: 125px;
+        height: auto;
+        position: relative;
+        left: 25%;
+      }
+      .item-description {
+        background: #d8d3d3;
+        height: 80px;
+        .item-name,
+        .price {
+          padding: 10px 0 0 5px;
+          strike {
+            color: red;
+          }
+        }
+        .item-name {
+          font-size: 18px;
+        }
+        .display-button {
+          float: right;
+          position: relative;
+          top: -30px;
+          margin-right: 10px;
+
+          .btn-primary {
+            border: 2px solid #2badc1;
+            color: #2badc1;
+            cursor: pointer;
+          }
+        }
+        .item-actual-price {
+          font-size: 16px;
+          color: black;
+        }
+        .item-final-price {
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+  .order-summary-details {
+    display: inline-block;
+    width: 34%;
+    margin: 20px 0 0 20px;
+    border-top: 1px solid #c1b4b4;
+    .added-items {
+      padding: 10px 0;
+    border-bottom: 1px solid #c1b4b4;
+      .items {
+        width: 50%;
+        display: inline-block;
+      }
+      .quantity {
+        width: 30%;
+        display: inline-block;
+      }
+    }
+    .summary {
+      border: 1px solid #c1b4b4;
+      margin-top: 20px;
+      .price-details {
+        margin: 20px 0px;
+        padding: 10px;
+        .total-section {
+          font-weight: bold;
+        }
+        .item-count, .discount {
+          width: 65%;
+          display: inline-block;
+          padding-top: 10px;
+        }
+        .total_product_price, .total_discount {
+          width: 30%;
+          display: inline-block;
+          text-align: right;
+        }
+      }
+      .order_total {
+        background: #c1bcbc;
+        height: 40px;
+        .order_label {
+          padding: 10px 0 0 10px;
+          width: 65%;
+          display: inline-block;
+        }
+        .netamount {
+          width: 30%;
+          display: inline-block;
+          text-align: right;
+          position: relative;
+          right: 20px;
+        }
+      }
+    }
+    .cart_item_details {
+      margin: 10px;
+      .image-name {
+        position: relative;
+        display: inline-block;
+        width: 40%;
+      }
+      img {
+        width: 25px;
+        height: auto;
+      }
+
+      .cart_item_name {
+        top: -15px;
+        left: 5px;
+        position: relative;
+      }
+      .display-button, .cart_item_quantity {
+        display: inline-block;
+        top: -15px;
+        left: 5px;
+        position: relative;
+      }
+      .display-button.remove {
+       .btn-primary {
+          border:none
+       }
+      }
+      .quantity-item {
+        display: inline-block;
+        left: 35px;
+        position: relative;
+      }
+      .cart_item_price {
+        position: relative;
+        float: right;
+        padding-right: 30px;
+        top: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 320px) and (max-width: 359px) {
+
+  }
+}
