@@ -58,7 +58,7 @@ export default {
       return total
     },
     totalDiscount () {
-      let discount = _sumBy(this.lineItems, (item) => item.discount)
+      let discount = _sumBy(this.lineItems, (item) => (item.price.display - item.price.actual))
       return discount
     }
 
